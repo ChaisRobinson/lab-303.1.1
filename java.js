@@ -88,6 +88,10 @@ const fuelEff60= 28;
 const fuelEff75= 23;
 const budget= 175;
 const costPerGallon= 3;
+const mph55 = 55;
+const mph60 = 60;
+const mph75 = 75;
+
  
 
 //1.
@@ -120,14 +124,32 @@ const distanceCost75= (distance/fuelEff75)*costPerGallon;
 console.log("No, $",distanceCost75, "is not enough to cover the cost of the entire trip.");
 
 
-//3.
+//3. 
 
+// 55
+const hours55= distance/mph55;
+console.log("This is how many hour it will take at 55pmh", hours55);
+
+// 60
+const hours60= distance/mph60;
+console.log("This is how many hour it will take at 55pmh", hours60);
+
+// 75
+const hours75= distance/mph75;
+console.log("This is how many hour it will take at 55pmh", hours75);
+
+
+
+
+//4.
+
+//  55
 const compare1 = distanceCost55<budget;
 console.log("True or False, at 55 mph will you complete the trip with $175?", compare1)
-
+// 60
 const compare2 = distanceCost60<budget;
 console.log("True or False, at 60 mph will you complete the trip with $175?", compare2)
-
+// 75
 const compare3 = distanceCost75<budget;
 console.log("True or False, at 75 mph will you complete the trip with $175?", compare3)
 
