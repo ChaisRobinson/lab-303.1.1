@@ -67,7 +67,7 @@ console.log("Is the first number larger than the last?", isFirstLargerThanLast);
 //3.
 const arithmeticChain = ((n2 - n1) * n3) % n4;
 
-console.log("The result of the arithmetic chain is", arithmeticChain);
+console.log("The result of the arithmetic chain is:", arithmeticChain);
 
 //4.
 const isAllUnder26 = n1 <= 25 && n2 <= 25 && n3 <= 25 && n4 <= 25;
@@ -76,82 +76,102 @@ const isAllUnder26 = n1 <= 25 && n2 <= 25 && n3 <= 25 && n4 <= 25;
 
 console.log("Are the numbers umder 26?", isAllUnder26);
 
-
-
 ////////////////////////////////////////////MATH PROBLEMS END/////////////////////////////////////////////////
 
 ////////////////////////////////////////////CAR TRIP PROGRAM//////////////////////////////////////////////////
 
 const distance = 1500;
-const fuelEff55= 30;
-const fuelEff60= 28;
-const fuelEff75= 23;
-const budget= 175;
-const costPerGallon= 3;
+const fuelEff55 = 30;
+const fuelEff60 = 28;
+const fuelEff75 = 23;
+const budget = 175;
+const costPerGallon = 3;
 const mph55 = 55;
 const mph60 = 60;
 const mph75 = 75;
 
- 
-
 //1.
 
 // 1500 at 55
-const distance55= (distance/fuelEff55);
+const distance55 = distance / fuelEff55;
 
-console.log("This is how many gallons of gas you need for the trip at 55 mph.", distance55);
+console.log(
+  "This is how many gallons of gas you need for the trip at 55 mph.",
+  distance55
+);
 // 1500 at 60
-const distance60= (distance/fuelEff60);
+const distance60 = distance / fuelEff60;
 
-console.log("This is how many gallons of gas you need for the trip at 55 mph.", distance60);
+console.log(
+  "This is how many gallons of gas you need for the trip at 55 mph.",
+  distance60
+);
 // 1500 at 75
-const distance75= (distance/fuelEff75);
+const distance75 = distance / fuelEff75;
 
-console.log("This is how many gallons of gas you need for the trip at 55 mph.", distance75);
+console.log(
+  "This is how many gallons of gas you need for the trip at 55 mph.",
+  distance75
+);
 
 //2.
 // 1500 at 55
-const distanceCost55= (distance/fuelEff55)*costPerGallon;
-console.log("Yes, $",distanceCost55, "is enough to cover the cost of the entire trip.");
-
+const distanceCost55 = (distance / fuelEff55) * costPerGallon;
+console.log(
+  "Yes, $",
+  distanceCost55,
+  "is enough to cover the cost of the entire trip."
+);
 
 // 1500 at 60
-const distanceCost60= (distance/fuelEff60)*costPerGallon;
-console.log("Yes, $",distanceCost60, "is enough to cover the cost of the entire trip.");
+const distanceCost60 = (distance / fuelEff60) * costPerGallon;
+console.log(
+  "Yes, $",
+  distanceCost60,
+  "is enough to cover the cost of the entire trip."
+);
 
 // 1500 at 75
-const distanceCost75= (distance/fuelEff75)*costPerGallon;
-console.log("No, $",distanceCost75, "is not enough to cover the cost of the entire trip.");
+const distanceCost75 = (distance / fuelEff75) * costPerGallon;
+console.log(
+  "No, $",
+  distanceCost75,
+  "is not enough to cover the cost of the entire trip."
+);
 
-
-//3. 
+//3.
 
 // 55
-const hours55= distance/mph55;
-console.log("This is how many hour it will take at 55pmh", hours55);
+const hours55 = distance / mph55;
+console.log("This is how many hours it will take at 55pmh:", hours55);
 
 // 60
-const hours60= distance/mph60;
-console.log("This is how many hour it will take at 55pmh", hours60);
+const hours60 = distance / mph60;
+console.log("This is how many hours it will take at 60mh:", hours60);
 
 // 75
-const hours75= distance/mph75;
-console.log("This is how many hour it will take at 55pmh", hours75);
-
-
-
+const hours75 = distance / mph75;
+console.log("This is how many hours it will take at 75pmh:", hours75);
 
 //4.
 
 //  55
-const compare1 = distanceCost55<budget;
-console.log("True or False, at 55 mph will you complete the trip with $175?", compare1)
+const compare1 = distanceCost55 < budget;
+console.log(
+  "True or False, at 55 mph will you complete the trip with $175?",
+  compare1
+);
 // 60
-const compare2 = distanceCost60<budget;
-console.log("True or False, at 60 mph will you complete the trip with $175?", compare2)
+const compare2 = distanceCost60 < budget;
+console.log(
+  "True or False, at 60 mph will you complete the trip with $175?",
+  compare2
+);
 // 75
-const compare3 = distanceCost75<budget;
-console.log("True or False, at 75 mph will you complete the trip with $175?", compare3)
-
+const compare3 = distanceCost75 < budget;
+console.log(
+  "True or False, at 75 mph will you complete the trip with $175?",
+  compare3
+);
 
 ////////////////////////////////////////////CAR TRIP PROGRAM END//////////////////////////////////////////////
