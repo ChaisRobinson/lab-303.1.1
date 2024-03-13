@@ -54,12 +54,35 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
 
 
   //1.
+  const allDivisibleBy5 = (n1 % 5 === 0) && (n2 % 5 === 0) && (n3 % 5 === 0) && (n4 % 5 === 0);
+
+  console.log("Are all numbers divisible by 5?", allDivisibleBy5);
 
 
   //2.
+  const isFirstLargerThanLast = n1 > n4;
+
+  console.log("Is the first number larger than the last?", isFirstLargerThanLast);
   
   //3.
+  const arithmeticChain = ((n2 - n1) * n3) % n4;
+  
+  console.log("The result of the arithmetic chain is", arithmeticChain);
 
   //4.
+
+
+
+////////////////////////////////////////////MATH PROBLEMS END/////////////////////////////////////////////////
+
+
+////////////////////////////////////////////CAR TRIP PROGRAM//////////////////////////////////////////////////
+
+
+
+
+
+
+////////////////////////////////////////////CAR TRIP PROGRAM END//////////////////////////////////////////////
 
   
